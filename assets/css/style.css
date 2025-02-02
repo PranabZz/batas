@@ -1,53 +1,4 @@
-/* 
-|......................................................................
-| Template Name: LogiHub
-| Author: Thememarch
-| Version: 1.0.0
-|--------------------------------------------------------------------------
-|--------------------------------------------------------------------------
-| TABLE OF CONTENTS:
-|--------------------------------------------------------------------------
-| 01. Basic Color Variable
-| 02. Typography
-| 03. Preloader
-| 04. Header
-| 05. Sidebar
-| 06. Footer
-| 07. Spacing
-| 08. General
-| 09. Breadcrumb
-| 10. Slider
-| 11. Video Modal
-| 12. Button
-| 13. Widget
-| 14. Hero
-| 15. Title
-| 16. Expertise Area
-| 17. About
-| 18. Services
-| 19. Clients
-| 20. Counter
-| 21. Section Form
-| 22. Team Member
-| 23. Call To Action
-| 24. Testimonial
-| 25. Project Case Study
-| 26. Blog
-| 27. Post Page
-| 28. Pricing
-| 29. Text Moving
-| 30. About Feature
-| 31. Process & Quote
-| 32. Faq
-| 33. Map Hotspot
-| 34. Contact
-| 35. Order Track
-| 36. Error Page
- ................................................................*/
-/*--------------------------------------------------------------
-  01. Basic Color Variable
-----------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&amp;family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;&display=swap');
 :root {
   --accent-color: #D40511;
   --body-color: #4A4A4A;
@@ -58,6 +9,12 @@
   --common-color-white: #ffffff;
   --common-color-black: #000000;
   --dark-bg: rgb(18 94 169);
+}
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0;
+  padding: 0;
 }
 
 .cs_white_color,
@@ -739,10 +696,11 @@ textarea {
 }
 
 .cs_sticky_header {
-  position: fixed !important;
+  position: sticky !important; /* Changed from fixed to sticky */
+  top: 0;
   width: 100%;
   z-index: 99;
-  background: #fff;
+  background: transparent;
   transition: all 0.4s ease;
 }
 
@@ -777,7 +735,7 @@ textarea {
   align-items: center;
   align-items: center;
   height: 100%;
-  margin-right: 300px;
+  margin-right: 150px;
 }
 .cs_site_header.cs_style1 .cs_main_header_right .cs-header-additional-item {
   margin-right: 30px;
